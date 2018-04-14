@@ -9,7 +9,10 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    coordinate.cpp \
+    cell.cpp \
+    grid.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -24,3 +27,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 DISTFILES += \
     grid_00.json
+
+HEADERS += \
+    iprintable.h \
+    coordinate.h \
+    cell.h \
+    grid.h
