@@ -37,11 +37,12 @@ public:
 
     void print() const;
 
-private:
+protected:
     quint32 m_width;
     quint32 m_height;
     QVector<Cell> m_cells;
 
+private:
     quint32 getCellIndex(quint32 x, quint32 y) const;
     Coordinate getCellCoordinate(quint32 cellIndex) const;
 

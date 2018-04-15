@@ -17,6 +17,9 @@ public:
     const QVector<quint32>& getValues() const;
     const QVector<quint32>& getMembers() const;
 
+    void setMembers(int members[], int memberCount);
+
+    void resetValues();
     void removeValue(quint32 value);
 
     /*!

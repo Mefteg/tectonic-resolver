@@ -29,6 +29,26 @@ const QVector<quint32>& Cell::getMembers() const
     return m_members;
 }
 
+void Cell::setMembers(int members[], int memberCount)
+{
+    m_members.clear();
+    m_members.reserve(memberCount);
+    for (int i=0; i<memberCount; ++i)
+    {
+        m_members.append(members[i]);
+    }
+}
+
+void Cell::resetValues()
+{
+    m_values.clear();
+    m_values.reserve(m_members.size() + 1);
+    for (int i=0; i<m_members.size() + 1; ++i)
+    {
+        m_values.append(i + 1);
+    }
+}
+
 void Cell::removeValue(quint32 value)
 {
     m_values.removeOne(value);

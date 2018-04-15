@@ -12,7 +12,8 @@ TEMPLATE = app
 SOURCES += main.cpp \
     coordinate.cpp \
     cell.cpp \
-    grid.cpp
+    grid.cpp \
+    jsongrid.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -32,4 +33,6 @@ HEADERS += \
     iprintable.h \
     coordinate.h \
     cell.h \
-    grid.h
+    grid.h \
+    ijsonserializable.h \
+    jsongrid.h
